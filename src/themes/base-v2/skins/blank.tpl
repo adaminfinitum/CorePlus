@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#">
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+	<!-- Open Graph is proprietary...and tacitly supports Facebook -->
 	<head>
-		<!-- Force latest IE rendering engine or ChromeFrame if installed -->
+		<meta charset="utf-8">
+		<!-- Force latest IE rendering engine or ChromeFrame if installed, omit if included in .htaccess -->
 		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
-		<link href="{asset src='css/reset.css'}" type="text/css" rel="stylesheet"/>
-		<link href="{asset src='css/styles.css'}" type="text/css" rel="stylesheet"/>
-		<!--[if lt IE 9]>
-			<script type="text/javascript" src="{asset src='js/html5.js'}"></script>
-		<![endif]-->
-		{script library="fontawesome"}{/script}
 		<title>{$title}</title>
+		<meta name="viewport" content="width=device-width">
+		<link href="{asset src='css/styles.css'}" type="text/css" rel="stylesheet"/>
+		<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script><![endif]-->
+		{script library="fontawesome"}{/script}
+		<!-- the script below helps older versions of IE act like modern browsera, however the linked version isn't served with gzip compression, download and serve locally for best performance -->
+		<!--[if lt IE 10]><script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
 	</head>
 
 	<body class="{$body_classes}">

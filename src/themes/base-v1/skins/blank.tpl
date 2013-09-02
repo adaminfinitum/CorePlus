@@ -3,13 +3,16 @@
 	<head>
 		<!-- Force latest IE rendering engine or ChromeFrame if installed -->
 		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+		<title>{$title}</title>
+		<meta name="viewport" content="width=device-width">
 		<link href="{asset src='css/reset.css'}" type="text/css" rel="stylesheet"/>
 		<link href="{asset src='css/styles.css'}" type="text/css" rel="stylesheet"/>
 		<!--[if lt IE 9]>
 			<script type="text/javascript" src="{asset src='js/html5.js'}"></script>
 		<![endif]-->
 		{script library="fontawesome"}{/script}
-		<title>{$title}</title>
+		<!-- the script below helps older versions of IE act like modern browsera, however the linked version isn't served with gzip compression, download and serve locally for best performance -->
+		<!--[if lt IE 10]><script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
 	</head>
 
 	<body>

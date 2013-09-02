@@ -1,10 +1,7 @@
-.error-image {
-	position:relative;
-}
+.error-image {position:relative;}
 
-.error-image > img {
-	width: 100%;
-}
+/* parent>child selector needs no whitespace */
+.error-image>img {width: 100%;}
 
 .error-top {
 	position:absolute;
@@ -25,12 +22,15 @@
 	color:#f3f3f3;
 	font-size:2.2em;
 }
-.error-bottom p {
-	padding:20px;
-}
 
-body.page-error #breadcrumbs {
-	display:none;
-}
+/* rules with single properties go on one line...small is sexy */
+.error-bottom p {padding:20px;}
 
-body.page-error .pagecontent {margin-left:0;}
+
+/* did the chained "body" element selector serve any purpose? I doubt it but if it did, uncomment it */
+
+/* body.page-error #breadcrumbs, */
+.page-error #breadcrumbs {display:none;}
+
+/* body.page-error .pagecontent, */
+.page-error .pagecontent {margin-left:0;}

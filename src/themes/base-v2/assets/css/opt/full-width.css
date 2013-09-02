@@ -1,7 +1,6 @@
-/**
- * Style sheet option to change the page width to 100% of the window.
- */
+/* modified not to be over-classified */
+#wrapper {width: 100%;}
 
-body #wrapper {
-	width: 100%;
-}
+/* does this need to be a separate stylesheet? */
+
+/* does anything, ever need to style on IDs? */

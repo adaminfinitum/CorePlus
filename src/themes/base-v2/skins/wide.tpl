@@ -1,25 +1,21 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#">
-<!-- :D -->
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+	<!-- Open Graph is proprietary...and tacitly supports Facebook -->
 	<head>
-		<!-- Force latest IE rendering engine or ChromeFrame if installed -->
+		<meta charset="utf-8">
+		<!-- Force latest IE rendering engine or ChromeFrame if installed, omit if included in .htaccess, see h5bp.com -->
 		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
-		{css src="css/reset.min.css"}{/css}
+		<title>{$title}</title>
+		<meta name="viewport" content="width=device-width">
 		{css src="css/styles.css"}{/css}
-		{css src="css/opt/gradients.css" optional="1" default="0"}{/css}
 		{css src="css/opt/full-width.css" optional="1" default="0" title="Set the page to be full width"}{/css}
-		{css src="css/print.css" media="print"}{/css}
-		{css src="css/screen.css" media="screen"}{/css}
-
-		<!--[if lt IE 9]>
-		<script type="text/javascript" src="{asset src='js/html5shiv.min.js'}"></script>
-		<![endif]-->
+		<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script><![endif]-->
 		{script library="fontawesome"}{/script}
 		<!-- This will enable the Core Plus context menus new in 2.4.0 -->
 		{script library="jquery"}{/script}
 		{script src="js/core.context-controls.js"}{/script}
-
-		<title>{$seotitle}</title>
+		<!-- the script below helps older versions of IE act like modern browsera, however the linked version isn't served with gzip compression, download and serve locally for best performance -->
+		<!--[if lt IE 10]><script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]-->
 	</head>
 
 	<body class="{$body_classes}">

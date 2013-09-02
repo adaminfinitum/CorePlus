@@ -1,17 +1,9 @@
-table.listing th {
-	background: #666;
-	background: linear-gradient(to bottom, #888 0%, #444 100%);
-}
+/* GRADIENTS.CSS */
 
-
-a.button, .ui-widget-content a.button, span.button, input[type="submit"], input[type="reset"], button {
-	background: #666;
-	background: linear-gradient(to bottom, #999 0%, #696969 100%);
-}
-
-.message-success {
-	background: linear-gradient(to bottom, #AAFFAA 0%, #CCFFCC 100%);
-}
-.message-error {
-	background: linear-gradient(to bottom, #f0d8e0 0%, #fae8ef 100%);
-}
+/* will there ever be a 'th that is a descendant of '.listing' that isn't a descendant of 'table?" */
+.listing th {background: #666; background: linear-gradient(to bottom, #888 0%, #444 100%);}
+/** perhaps the latter would suffice **/
+  /* a.button, .ui-widget-content a.button, span.button, input[type="submit"], input[type="reset"], button */
+.button, input[type="submit"], input[type="reset"], button {background: #666;background: linear-gradient(to bottom, #999 0%, #696969 100%);}
+.message-success {background: linear-gradient(to bottom, #afa 0%, #cfc 100%);}
+.message-error {background: linear-gradient(to bottom, #f0d8e0 0%, #fae8ef 100%);}
